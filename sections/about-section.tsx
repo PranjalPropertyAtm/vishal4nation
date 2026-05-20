@@ -4,11 +4,6 @@ import { motion } from "framer-motion";
 import { Flag, ShieldCheck, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { fadeUp, staggerContainer } from "@/lib/motion";
-import { BrushTagline } from "@/components/campaign/brush-tagline";
-import { HangingPlacard } from "@/components/campaign/hanging-placard";
-import { PoliticalCta } from "@/components/campaign/political-cta";
-import { CampaignName } from "@/components/campaign/campaign-name";
-import { PLACARD_BLOCKS } from "@/lib/campaign-messages";
 
 const pillars = [
   {
@@ -87,36 +82,6 @@ export function AboutSection() {
               );
               })}
             </div>
-        </motion.div>
-
-        {/* Political awareness — exact campaign lines */}
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-20 space-y-10 rounded-2xl border border-blood/30 bg-black/40 p-6 shadow-[0_0_48px_rgba(193,18,31,0.2)] sm:p-10"
-        >
-          <div className="text-center">
-            <p className="font-[family-name:var(--font-teko)] text-xs uppercase tracking-[0.28em] text-blood">
-              जागरूकता अभियान
-            </p>
-            <h3 className="mt-2 font-[family-name:var(--font-mukta)] text-2xl font-extrabold text-white sm:text-3xl">
-              देशहित में सच की आवाज़
-            </h3>
-          </div>
-          <BrushTagline />
-          <div className="grid gap-8 sm:grid-cols-3 sm:gap-5">
-            {PLACARD_BLOCKS.map((p) => (
-              <HangingPlacard
-                key={`about-${p.lines.join()}`}
-                lines={p.lines}
-                tilt={p.tilt}
-              />
-            ))}
-          </div>
-          <PoliticalCta />
-          <CampaignName size="lg" />
         </motion.div>
       </div>
     </section>
