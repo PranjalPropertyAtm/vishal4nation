@@ -1,0 +1,66 @@
+/* Extra cinematic utilities (imported from globals.css) */
+@keyframes slow-pan {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-2%, -1%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-slow-pan {
+  animation: slow-pan 18s ease-in-out infinite;
+}
+
+@keyframes campaign-tagline-glow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.3),
+      0 0 24px rgba(255, 214, 0, 0.28);
+  }
+  50% {
+    text-shadow:
+      0 0 18px rgba(255, 255, 255, 0.55),
+      0 0 40px rgba(255, 214, 0, 0.45);
+  }
+}
+
+.campaign-tagline-glow {
+  animation: campaign-tagline-glow 2.8s ease-in-out infinite;
+}
+
+/* Red brush slab (awareness tagline) */
+.brush-tagline-bg {
+  background:
+    linear-gradient(
+      165deg,
+      rgba(60, 0, 0, 0.55) 0%,
+      rgba(193, 18, 31, 0.96) 38%,
+      #6b0000 100%
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='120'%3E%3Cpath d='M0 40 Q80 10 200 35 T400 25 L400 120 L0 120 Z' fill='%23ffffff' opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 400px 120px;
+  box-shadow:
+    0 0 32px rgba(193, 18, 31, 0.45),
+    inset 0 -6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Paper protest placard */
+.placard-paper {
+  background: linear-gradient(180deg, #f7f4ef 0%, #e8e3d8 100%);
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.5),
+    0 2px 0 rgba(255, 255, 255, 0.55) inset,
+    0 -2px 8px rgba(0, 0, 0, 0.06) inset;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.campaign-cta-slab {
+  box-shadow:
+    0 0 36px rgba(193, 18, 31, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
