@@ -58,8 +58,8 @@ const platforms = [
     name: "Instagram",
     handle: "@vishalfornation",
     icon: IconInstagram,
-    href: "#",
-    external: false,
+    href: SITE_CONTACT.instagram,
+    external: true,
     accent: "from-fuchsia-600/30 to-purple-900/10",
   },
 ] as const;

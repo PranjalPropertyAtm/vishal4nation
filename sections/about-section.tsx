@@ -13,8 +13,8 @@ const pillars = [
     text: "हर चर्चा में राष्ट्रहित को केंद्र में रखना।",
   },
   {
-    title: "Truth Awareness",
-    hi: "सत्य की जागरूकता",
+    title: "Truth that is free from illusion and deception",
+    hi: "वह सत्य जो भ्रम और छल से मुक्त हो।",
     icon: ShieldCheck,
     text: "तथ्यों की पड़ताल और पारदर्शी विश्लेषण।",
   },
@@ -22,7 +22,7 @@ const pillars = [
     title: "Youth Motivation",
     hi: "युवा प्रेरणा",
     icon: Sparkles,
-    text: "नई पीढ़ी को सकारात्मक राष्ट्रवाद की दिशा देना।",
+    text: "नई पीढ़ी कि ज्वलंत समस्याओं का निडर एवं मुखर प्रतिनिधित्व एवं राष्ट्र निर्माण में उनकी सकारात्मक भागीदारी की दिशा देना।",
   },
 ];
 
@@ -54,7 +54,7 @@ export function AboutSection() {
               className="font-[family-name:var(--font-mukta)] text-lg leading-relaxed text-mist sm:text-xl"
             >
               राष्ट्रहित, जागरूकता और सत्य के लिए समर्पित। जनता तक सही जानकारी
-              पहुंचाना ही उद्देश्य।
+              जनता तक सही जानकारी एवं जनहित से जुड़े मुद्दों को उठाना ही एकमात्र उद्देश्य है।
             </motion.p>
 
             <div className="grid gap-4 sm:grid-cols-3">
